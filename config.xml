@@ -9,6 +9,10 @@
 <preference name="android-build-tool" value="gradle" />
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="AndroidExtraFilesystems" value="files,cache, sdcard, cache-external, files-external" />
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
 <allow-intent href="http://*/*"/>
 <allow-intent href="https://*/*"/>
 <allow-intent href="tel:*"/>
@@ -23,7 +27,7 @@
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <plugin name="cordova-android-support-gradle-release"/>
 <plugin name="cordova-plugin-enable-multidex"/>
-<plugin name="cordova-plugin-permission"/>
+<plugin name="cordova-plugin-android-permissions"/>
 <plugin name="cordova-plugin-device" spec="1.1.2"/>
 <plugin name="cordova-plugin-compat" spec="1.2.0"/>
 <plugin name="cordova-plugin-file" spec="6.0.1"/>
